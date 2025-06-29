@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | P&S Legacy Wealth</title>
+  <title>Contact | P&S Legacy Wealth</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -17,8 +17,17 @@
   </header>
   <main>
     <section>
-      <h2>About Us</h2>
-      <p>At P&S Legacy Wealth, we are committed to guiding individuals and families toward a more secure financial future. With a focus on personalized service, strategic planning, and legacy building, our mission is to empower our clients with clarity and confidence in their financial journey.</p>
+      <h2>Contact Us</h2>
+      <p>If you’d like to schedule a consultation or learn more about how we can help you, fill out the form below.</p>
+      <form action="mailto:your@email.com" method="POST" enctype="text/plain">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+        <button type="submit">Send</button>
+      </form>
     </section>
   </main>
   <footer>
