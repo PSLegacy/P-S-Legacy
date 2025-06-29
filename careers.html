@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | P&S Legacy Wealth</title>
+  <title>Careers | P&S Legacy Wealth</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,20 +13,27 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
+      <a href="careers.html">Careers</a>
     </nav>
   </header>
   <main>
     <section>
-      <h2>Contact Us</h2>
-      <p>If you’d like to schedule a consultation or learn more about how we can help you, fill out the form below.</p>
-      <form action="mailto:prsosacontracting@gmail.com" method="POST" enctype="text/plain">
-        <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" required /><br /><br />
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" required /><br /><br />
-        <label for="message">Message:</label><br />
-        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
-        <button type="submit">Send</button>
+      <h2>Join Our Team</h2>
+      <p>We’re always looking for talented and passionate individuals to help us grow. Fill out the form below to apply for a position with P&S Legacy Wealth.</p>
+      <form action="https://formsubmit.co/your-email@example.com" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+        <label for="position">Position You're Applying For:</label>
+        <input type="text" id="position" name="position" required />
+        <label for="resume">Link to Resume (Google Drive, Dropbox, etc.):</label>
+        <input type="url" id="resume" name="resume" />
+        <label for="message">Why do you want to join us?</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Submit Application</button>
       </form>
     </section>
   </main>
