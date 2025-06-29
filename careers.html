@@ -5,6 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Careers | P&S Legacy Wealth</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .career-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #fdfdfd;
+    }
+
+    .career-section img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+    }
+
+    form input, form textarea, form button {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    form button {
+      background-color: #0b3d91;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+
+    form button:hover {
+      background-color: #072d70;
+    }
+
+    .trust-section {
+      margin-top: 2rem;
+    }
+
+    .trust-section h3 {
+      color: #0b3d91;
+    }
+
+    .trust-section ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      form {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      form textarea {
+        grid-column: span 2;
+      }
+
+      form button {
+        grid-column: span 2;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -16,27 +82,35 @@
       <a href="careers.html">Careers</a>
     </nav>
   </header>
-  <main>
-    <section>
-      <h2>Join Our Team</h2>
-      <p>We’re always looking for talented and passionate individuals to help us grow. Fill out the form below to apply for a position with P&S Legacy Wealth.</p>
-      <form action="https://formsubmit.co/prsosacontracting@gmail.com" method="POST">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required />
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required />
-        <label for="position">Position You're Applying For:</label>
-        <input type="text" id="position" name="position" required />
-        <label for="resume">Link to Resume (Google Drive, Dropbox, etc.):</label>
-        <input type="url" id="resume" name="resume" />
-        <label for="message">Why do you want to join us?</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <button type="submit">Submit Application</button>
-      </form>
-    </section>
+
+  <main class="career-section">
+    <h2>Grow With Us</h2>
+    <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=900&q=80" alt="Teamwork in Finance" />
+
+    <p>At <strong>P&S Legacy Wealth</strong>, we are driven by purpose and powered by people. We're seeking passionate professionals who are excited to help families and individuals protect their future and build lasting legacies.</p>
+
+    <div class="trust-section">
+      <h3>Why Work With Us?</h3>
+      <ul>
+        <li>Work alongside experienced financial advisors and wealth planners</li>
+        <li>Flexible, growth-oriented work environment</li>
+        <li>Ongoing training and mentorship</li>
+        <li>Make a real difference in people’s lives</li>
+      </ul>
+    </div>
+
+    <h3 style="margin-top: 2rem;">Apply Now</h3>
+    <form action="https://formsubmit.co/your-email@example.com" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="text" name="position" placeholder="Position You're Applying For" required />
+      <input type="url" name="resume" placeholder="Link to Resume (Google Drive, Dropbox, etc.)" />
+      <textarea name="message" placeholder="Tell us why you'd be a great fit..." rows="5" required></textarea>
+      <button type="submit">Submit Application</button>
+    </form>
   </main>
+
   <footer>
     <p>&copy; 2025 P&S Legacy Wealth. All rights reserved.</p>
   </footer>
