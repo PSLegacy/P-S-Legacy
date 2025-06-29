@@ -4,77 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Careers | P&S Legacy Wealth</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .career-section {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem;
-      background-color: #fdfdfd;
-    }
-
-    .career-section img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 1.5rem;
-    }
-
-    form {
-      display: grid;
-      gap: 1rem;
-    }
-
-    form input, form textarea, form button {
-      padding: 0.75rem;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      width: 100%;
-    }
-
-    form button {
-      background-color: #0b3d91;
-      color: white;
-      cursor: pointer;
-      border: none;
-    }
-
-    form button:hover {
-      background-color: #072d70;
-    }
-
-    .trust-section {
-      margin-top: 2rem;
-    }
-
-    .trust-section h3 {
-      color: #0b3d91;
-    }
-
-    .trust-section ul {
-      list-style: disc;
-      padding-left: 1.5rem;
-    }
-
-    @media (min-width: 768px) {
-      form {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      form textarea {
-        grid-column: span 2;
-      }
-
-      form button {
-        grid-column: span 2;
-      }
-    }
-  </style>
 </head>
 <body>
   <header>
-    <h1>P&S Legacy Wealth</h1>
+    <h1 class="logo">P&S Legacy Wealth</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -83,32 +18,38 @@
     </nav>
   </header>
 
-  <main class="career-section">
-    <h2>Grow With Us</h2>
-    <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=900&q=80" alt="Teamwork in Finance" />
+  <main class="careers-section">
+    <section class="intro">
+      <h2>Join Our Team</h2>
+      <p>At <strong>P&S Legacy Wealth</strong>, we are driven by purpose and powered by people. We're seeking passionate professionals who are excited to help families and individuals protect their future and build lasting legacies.</p>
+    </section>
 
-    <p>At <strong>P&S Legacy Wealth</strong>, we are driven by purpose and powered by people. We're seeking passionate professionals who are excited to help families and individuals protect their future and build lasting legacies.</p>
-
-    <div class="trust-section">
+    <section class="why-work">
       <h3>Why Work With Us?</h3>
       <ul>
         <li>Work alongside experienced financial advisors and wealth planners</li>
         <li>Flexible, growth-oriented work environment</li>
         <li>Ongoing training and mentorship</li>
-        <li>Make a real difference in people’s lives</li>
+        <li>Make a real difference in people's lives</li>
       </ul>
-    </div>
+    </section>
 
-    <h3 style="margin-top: 2rem;">Apply Now</h3>
-    <form action="https://formsubmit.co/your-email@example.com" method="POST">
-      <input type="text" name="name" placeholder="Full Name" required />
-      <input type="email" name="email" placeholder="Email Address" required />
-      <input type="tel" name="phone" placeholder="Phone Number" required />
-      <input type="text" name="position" placeholder="Position You're Applying For" required />
-      <input type="url" name="resume" placeholder="Link to Resume (Google Drive, Dropbox, etc.)" />
-      <textarea name="message" placeholder="Tell us why you'd be a great fit..." rows="5" required></textarea>
-      <button type="submit">Submit Application</button>
-    </form>
+    <img src="images/finance-team.jpg" alt="Finance professionals" class="career-image" />
+
+    <section class="application-form">
+      <h3>Apply Now</h3>
+      <form action="#" method="post">
+        <div class="form-grid">
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email Address" required />
+          <input type="text" name="phone" placeholder="Phone Number" required />
+          <input type="text" name="position" placeholder="Position You're Applying For" required />
+          <input type="url" name="resume" placeholder="Link to Resume (Google Drive, Dropbox, etc.)" />
+        </div>
+        <textarea name="message" rows="5" placeholder="Tell us why you’d be a great fit..." required></textarea>
+        <button type="submit">Submit Application</button>
+      </form>
+    </section>
   </main>
 
   <footer>
