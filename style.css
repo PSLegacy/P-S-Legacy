@@ -1,99 +1,82 @@
-/* General Reset and Font */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-}
+/* Global Styling */
 body {
-  background-color: #ffffff;
-  color: #1a1a1a;
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
   line-height: 1.6;
-  padding: 0 20px;
+  background-color: #f9fdfb;
+  color: #222;
 }
-/* Header and Navigation */
 header {
-  background: #0a3d62;
+  background: #0c3c47;
   color: white;
-  padding: 30px 20px;
+  padding: 1.5rem;
   text-align: center;
-  border-radius: 0 0 10px 10px;
 }
 header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+  margin: 0;
+  font-size: 2rem;
   font-weight: 600;
 }
-header p {
-  font-size: 1.1em;
-  font-weight: 300;
-}
 nav {
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  padding: 15px 0;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #e0e0e0;
+  background-color: #e0f0ec;
+  text-align: center;
+  padding: 0.75rem;
 }
 nav a {
-  color: #0a3d62;
+  color: #0c3c47;
+  margin: 0 1rem;
   text-decoration: none;
-  margin: 0 15px;
   font-weight: 500;
 }
 nav a:hover {
-  color: #20bf6b;
+  text-decoration: underline;
 }
-/* Main Layout */
 main {
   max-width: 900px;
   margin: auto;
-  padding: 20px 0;
+  padding: 2rem 1rem;
 }
-main h2 {
-  color: #0a3d62;
-  margin-bottom: 15px;
-}
-section, .form-section {
-  margin-bottom: 40px;
-}
-/* Footer */
 footer {
-  background: #0a3d62;
+  background: #0c3c47;
   color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-  border-radius: 10px 10px 0 0;
-  margin-top: 40px;
+  padding: 1rem;
+  margin-top: 3rem;
 }
-/* Forms */
+img.hero-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+/* Contact Form */
 form {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  display: grid;
+  gap: 1rem;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
 }
 input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
+  padding: 0.75rem;
+  font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 button {
-  background-color: #20bf6b;
+  background-color: #2e8b57;
   color: white;
   border: none;
-  padding: 12px 20px;
-  margin-top: 15px;
-  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
   cursor: pointer;
-  font-weight: 600;
+  width: fit-content;
 }
 button:hover {
-  background-color: #17a060;
+  background-color: #25724b;
 }
 .career-image {
   display: block;
