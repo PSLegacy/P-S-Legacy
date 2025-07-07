@@ -8,31 +8,31 @@
 </head>
 <body>
   <header>
-    <h1>Contact Us</h1>
-    <p>We're here to help you plan your financial future.</p>
+    <h1>P&S Legacy Wealth</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="careers.html">Careers</a>
+    </nav>
   </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="careers.html">Careers</a>
-  </nav>
-  <main>
-    <section class="form-section">
-      <h2>Send Us a Message</h2>
-      <form action="#" method="POST">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required />
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+  <main class="form-page">
+    <h2>Contact Us</h2>
+    <p>Let us know how we can help you with your financial goals.</p>
+    <form action="https://formspree.io/f/xrbkvdkk" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" name="name" id="name" required />
+      <label for="email">Email Address</label>
+      <input type="email" name="email" id="email" required />
+      <label for="message">Your Message</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="thankyou.html" />
+      <button type="submit">Send Message</button>
+    </form>
   </main>
   <footer>
-    &copy; 2025 P&S Legacy Wealth. All rights reserved.
+    <p>&copy; 2025 P&S Legacy Wealth. All rights reserved.</p>
   </footer>
 </body>
 </html>
