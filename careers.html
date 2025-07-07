@@ -4,12 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Careers | P&S Legacy Wealth</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1 class="logo">P&S Legacy Wealth</h1>
+    <h1>P&S Legacy Wealth</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -17,42 +16,27 @@
       <a href="careers.html">Careers</a>
     </nav>
   </header>
-
-  <main class="careers-section">
-    <section class="intro">
+  <main>
+    <section>
       <h2>Join Our Team</h2>
-      <p>At <strong>P&S Legacy Wealth</strong>, we are driven by purpose and powered by people. We're seeking passionate professionals who are excited to help families and individuals protect their future and build lasting legacies.</p>
-    </section>
-
-    <section class="why-work">
-      <h3>Why Work With Us?</h3>
-      <img src="team-finance.jpeg" alt="Finance team working together" class="career-image" />
-      <ul>
-        <li>Work alongside experienced financial advisors and wealth planners</li>
-        <li>Flexible, growth-oriented work environment</li>
-        <li>Ongoing training and mentorship</li>
-        <li>Make a real difference in people's lives</li>
-      </ul>
-    </section>
-
-    <section class="application-form">
-      <h3>Apply Now</h3>
-     <form action="https://formspree.io/f/xrbkvdkk" method="POST">
-  <label for="fullname">Full Name</label>
-  <input type="text" id="fullname" name="fullname" required>
-  <label for="email">Email Address</label>
-  <input type="email" id="email" name="email" required>
-  <label for="phone">Phone Number</label>
-  <input type="tel" id="phone" name="phone" required>
-  <label for="resume">Paste Your Resume or Experience</label>
-  <textarea id="resume" name="resume" rows="5" required></textarea>
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="thankyou.html">
-  <button type="submit">Submit Application</button>
-</form>
+      <p>We're always looking for passionate professionals to join us in helping families build and protect their financial legacy. If you’re a motivated individual with a commitment to excellence and service, we’d love to hear from you.</p>
+      
+      <form action="https://formspree.io/f/xrbkvdkk" method="POST" class="application-form">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="resume">Paste Your Resume or Experience</label>
+        <textarea id="resume" name="resume" rows="5" required></textarea>
+        <!-- Hidden fields for redirect -->
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="thankyou.html" />
+        <button type="submit">Submit Application</button>
+      </form>
     </section>
   </main>
-
   <footer>
     <p>&copy; 2025 P&S Legacy Wealth. All rights reserved.</p>
   </footer>
