@@ -54,10 +54,13 @@ h2, h3 {
   gap: 20px;
 }
 .hero img {
-  max-width: 100%;
-  width: 500px;
-  border-radius: 8px;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  border-radius: 10px;
   flex: 1 1 400px;
+  object-fit: cover;
+  display: block;
 }
 .hero-text {
   flex: 1 1 300px;
