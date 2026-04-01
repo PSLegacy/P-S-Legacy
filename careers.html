@@ -7,38 +7,79 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>P&S Legacy Wealth</h1>
-    <nav>
+  <header class="site-header compact">
+    <div class="brand-wrap">
+      <h1>P&amp;S Legacy Wealth</h1>
+      <p>Join a firm committed to professionalism, service, and long-term growth.</p>
+    </div>
+  </header>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-      <a href="careers.html">Careers</a>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <h2>Join Our Team</h2>
-      <p>We're always looking for passionate professionals to join us in helping families build and protect their financial legacy. If you’re a motivated individual with a commitment to excellence and service, we’d love to hear from you.</p>
-      
-      <form action="https://formspree.io/f/xrbkvdkk" method="POST" class="application-form">
-        <label for="fullname">Full Name</label>
-        <input type="text" id="fullname" name="fullname" required>
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required>
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" required>
-        <label for="resume">Paste Your Resume or Experience</label>
-        <textarea id="resume" name="resume" rows="5" required></textarea>
-        <!-- Hidden fields for redirect -->
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="thankyou.html" />
-        <button type="submit">Submit Application</button>
-      </form>
+      <a href="careers.html" class="active">Careers</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="section">
+      <div class="career-grid">
+        <div class="career-item">
+          <span class="eyebrow">Careers</span>
+          <h2>Build a Career with Purpose</h2>
+          <p>
+            We are always interested in connecting with motivated professionals who value
+            excellence, integrity, and the opportunity to make a meaningful impact.
+          </p>
+          <p>
+            At P&amp;S Legacy Wealth, we believe a strong team is built through mentorship,
+            professionalism, and a culture of growth.
+          </p>
+          <ul class="clean-list">
+            <li>Growth-oriented environment</li>
+            <li>Client-centered work</li>
+            <li>Professional development mindset</li>
+            <li>Purpose-driven financial guidance</li>
+          </ul>
+        </div>
+
+        <form action="https://formspree.io/f/xrbkvdkk" method="POST">
+          <div class="form-grid">
+            <div>
+              <label for="fullname">Full Name</label>
+              <input type="text" id="fullname" name="fullname" required />
+            </div>
+            <div>
+              <label for="career-email">Email Address</label>
+              <input type="email" id="career-email" name="email" required />
+            </div>
+            <div>
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" name="phone" required />
+            </div>
+            <div>
+              <label for="position">Position You're Applying For</label>
+              <input type="text" id="position" name="position" required />
+            </div>
+            <div class="form-full">
+              <label for="resume">Paste Your Resume or Experience</label>
+              <textarea id="resume" name="resume" required></textarea>
+            </div>
+          </div>
+
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://pslegacywealth.com/thankyou.html" />
+
+          <button type="submit">Submit Application</button>
+        </form>
+      </div>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2025 P&S Legacy Wealth. All rights reserved.</p>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 P&amp;S Legacy Wealth. All rights reserved.</p>
   </footer>
 </body>
 </html>
