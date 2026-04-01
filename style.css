@@ -453,3 +453,51 @@ ul.clean-list li {
 .careers-header {
   background: linear-gradient(135deg, #10263b, #3a7d6b);
 }
+.home-hero,
+.home-feature {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 36px;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.home-hero-text,
+.home-feature-text {
+  min-width: 0;
+}
+
+.home-hero-image-wrap,
+.home-feature-image-wrap {
+  min-width: 0;
+}
+
+.home-hero-image,
+.home-feature-image {
+  width: 100%;
+  max-width: 520px;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(16, 38, 59, 0.12);
+}
+
+.home-services,
+.home-commitment {
+  margin-bottom: 48px;
+}
+
+@media (max-width: 920px) {
+  .home-hero,
+  .home-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero-image,
+  .home-feature-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
