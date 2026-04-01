@@ -3,36 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | P&S Legacy Wealth</title>
+  <title>Contact | P&S Legacy Wealth</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>P&S Legacy Wealth</h1>
-    <nav>
+  <header class="site-header compact">
+    <div class="brand-wrap">
+      <h1>P&amp;S Legacy Wealth</h1>
+      <p>We welcome the opportunity to connect with you.</p>
+    </div>
+  </header>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
       <a href="careers.html">Careers</a>
-    </nav>
-  </header>
-  <main class="form-page">
-    <h2>Contact Us</h2>
-    <p>Let us know how we can help you with your financial goals.</p>
-    <form action="https://formspree.io/f/xrbkvdkk" method="POST">
-      <label for="name">Full Name</label>
-      <input type="text" name="name" id="name" required />
-      <label for="email">Email Address</label>
-      <input type="email" name="email" id="email" required />
-      <label for="message">Your Message</label>
-      <textarea name="message" id="message" rows="5" required></textarea>
-      <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_next" value="thankyou.html" />
-      <button type="submit">Send Message</button>
-    </form>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="section">
+      <div class="contact-grid">
+        <div class="contact-item">
+          <span class="eyebrow">Contact</span>
+          <h2>Let’s Start the Conversation</h2>
+          <p>
+            If you have questions about our services or would like to discuss your financial
+            goals, please complete the form and a member of our team will follow up with you.
+          </p>
+          <p class="note">
+            We value professionalism, timely communication, and a thoughtful client experience.
+          </p>
+        </div>
+
+        <form action="https://formspree.io/f/xrbkvdkk" method="POST">
+          <div class="form-grid">
+            <div>
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+          </div>
+
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://pslegacywealth.com/thankyou.html" />
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
   </main>
-  <footer>
-    <p>&copy; 2025 P&S Legacy Wealth. All rights reserved.</p>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 P&amp;S Legacy Wealth. All rights reserved.</p>
   </footer>
 </body>
 </html>
