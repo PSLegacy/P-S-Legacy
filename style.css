@@ -440,3 +440,16 @@ ul.clean-list li {
   background: linear-gradient(to right, #c2a878, transparent);
   opacity: 0.8;
 }
+/* Subtle header variations per page */
+
+.about-header {
+  background: linear-gradient(135deg, #10263b, #1f5c4d);
+}
+
+.contact-header {
+  background: linear-gradient(135deg, #0f2a40, #2a6f97);
+}
+
+.careers-header {
+  background: linear-gradient(135deg, #10263b, #3a7d6b);
+}
