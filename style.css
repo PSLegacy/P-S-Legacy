@@ -412,3 +412,31 @@ ul.clean-list li {
     padding: 42px 16px 56px;
   }
 }
+.brand-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+
+  /* Premium gradient */
+  background: linear-gradient(135deg, #ffffff, #e6eef5, #c2a878);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Depth */
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+  margin-bottom: 8px;
+  position: relative;
+}
+
+/* Elegant underline */
+.brand-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin: 12px auto 0;
+  background: linear-gradient(to right, #c2a878, transparent);
+  opacity: 0.8;
+}
